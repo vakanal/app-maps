@@ -29,6 +29,7 @@ npm run build
 ```
 npm run deploy
 ```
+3. You can see the results in this url: https://vakanal.github.io/app-maps/
 
 ### Note
 Read this tutorial for more information:
@@ -36,9 +37,9 @@ https://medium.com/mobile-web-dev/how-to-build-and-deploy-a-react-app-to-github-
 
 ## How to run the tests E2E
 
+1. The app server has to be running previously to run the E2E tests.
+
+2. Run this command:
 ```
 npm run cypress:open
 ```
-
-### Note
-The app server has to be running previously to run the E2E tests.
