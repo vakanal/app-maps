@@ -21,7 +21,7 @@ npm start
 
 ## Deploy in GitHub Pages (Optional)
 
-1. Create the bundle with reduce size using this command:
+1. Create the bundle with reduced size using this command:
 ```
 npm run build
 ```
