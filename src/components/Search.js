@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import { StandaloneSearchBox } from "@react-google-maps/api";
 import { addLocation } from "../features/location/locationSlice";
@@ -33,5 +34,9 @@ function Search({ panTo }) {
     </>
   );
 }
+
+Search.propTypes = {
+  panTo: PropTypes.func.isRequired,
+};
 
 export default Search;

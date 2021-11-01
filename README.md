@@ -1,44 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# App Maps with Redux Toolkit and Google Maps API
 
-## Available Scripts
+## How to install and run the app
 
-In the project directory, you can run:
+### Local development
 
-### `npm start`
+1. Install the dependencies:
+```
+npm install
+```
+1. Create an enviroment file called `.env` in the root of the project and put this content:
+```
+REACT_APP_GOOGLE_MAPS_API_KEY=<REPLACE_THIS_CONTENT_WITH_YOUR_API_KEY>
+URL_TEST=http://localhost:3000/
+```
+3. Run the server:
+```
+npm start
+```
+4. Once the server is running, you can view the result in this url: http://localhost:3000/
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Deploy in GitHub Pages (Optional)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Create the bundle with reduce size using this command:
+```
+npm run build
+```
+2. Deploy into GitHub Pages using the following command:
+```
+npm run deploy
+```
 
-### `npm test`
+### Note
+Read this tutorial for more information:
+https://medium.com/mobile-web-dev/how-to-build-and-deploy-a-react-app-to-github-pages-in-less-than-5-minutes-d6c4ffd30f14
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to run the tests E2E
 
-### `npm run build`
+```
+npm run cypress:open
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Note
+The app server has to be running previously to run the E2E tests.
